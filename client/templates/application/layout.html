@@ -2,14 +2,13 @@
   <div class="container">
     <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
+        {{> navigation}}
         <a class="navbar-brand" href="{{pathFor 'projectList'}}">Kilcrease Construction</a>
       </div>
     </header>
     <div id="main">
       {{> yield}}
     </div>
-    <div>
-      {{> projectSubmission}}
-    </div>
+    
   </div>
 </template>

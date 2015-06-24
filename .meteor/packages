@@ -12,3 +12,4 @@ iron:router
 sacha:spin
 cfs:standard-packages
 cfs:gridfs
+cfs:s3
