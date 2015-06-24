@@ -4,3 +4,9 @@ Template.projectList.helpers({
   return Projects.find();
 }
 });
+
+Template.projectList.events({
+  'click .delete': function () {
+    Projects.remove(this._id);
+  }
+});

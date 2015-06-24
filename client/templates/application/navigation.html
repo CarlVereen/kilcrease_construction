@@ -1,9 +1,14 @@
 <template name="navigation">
-  <nav>
-    <ul>
-      <li><a href="{{pathFor 'homePage'}}">Home</a></li>
-      <li><a href="{{pathFor 'projectSubmission'}}">Project Submission</a></li>
-      <li><a href="{{pathFor 'projectList'}}">Project view</a></li>
-    </ul>
-  </nav>
+  <nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="{{pathFor 'homePage'}}">Kilcrease Construction</a>
+   </div>
+   <div>
+      <ul class="nav navbar-nav">
+          <li><a href="{{pathFor 'homePage'}}">Home</a></li>
+          <li><a href="{{pathFor 'projectSubmission'}}">Project Submission</a></li>
+          <li><a href="{{pathFor 'projectList'}}">Project view</a></li>
+      </ul>
+   </div>
+</nav>
 </template>
