@@ -2,6 +2,7 @@ if (Projects.find().count() === 0) {
   Projects.insert({
     project_id: 'bc12345',
     project_name: 'Scott Birdcage',
+    project_description: 'Build a black birdcage',
     processing_initial_paperwork: 'In Progress',
     architectural_HOA_review: 'Not Started',
     filing_notice_of_commencement:'Not Started',
@@ -19,6 +20,7 @@ if (Projects.find().count() === 0) {
   Projects.insert({
     project_id: 'dk23456',
     project_name: 'Monroe Deck',
+    project_description: 'Build a red deck',
     processing_initial_paperwork: 'Completed',
     architectural_HOA_review: 'In Progress',
     filing_notice_of_commencement:'Not Started',
@@ -36,6 +38,7 @@ if (Projects.find().count() === 0) {
   Projects.insert({
     project_id: 've34567',
     project_name: 'Vereen Veranda',
+    project_description: 'Build a green veranda',
     processing_initial_paperwork: 'Completed',
     architectural_HOA_review: 'Completed',
     filing_notice_of_commencement:'Completed',
