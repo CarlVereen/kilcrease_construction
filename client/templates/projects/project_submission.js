@@ -10,5 +10,6 @@ Template.projectSubmission.events({
     })
     event.target.projectName.value="";
     event.target.projectID.value="";
+    //Router.go('projectPage');
   }
 })
