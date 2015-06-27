@@ -13,3 +13,4 @@ sacha:spin
 cfs:standard-packages
 cfs:gridfs
 cfs:s3
+aldeed:autoform

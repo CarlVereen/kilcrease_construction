@@ -1,10 +1,4 @@
 <template name="projectItem">
-  <!-- <div class="container">
-    <div class="container">
-      <h3><a href="{{url}}">{{project_name}}</a></h3>
-      <h4><span>{{project_id}}</span></h4>
-      <p>{{project_description}}</p>
-    </div> -->
     <td  class='table table-bordered table-striped'>{{project_id}}</td>
     <td  class='table table-bordered table-striped'>{{project_name}}</td>
     <td  class='table table-bordered table-striped'>{{project_description}}</td>
@@ -21,5 +15,4 @@
     <td  class='table table-bordered table-striped'>{{project_status}}</td>
     <td  class='table table-bordered table-striped'><a href="{{pathFor 'projectPage'}}" class="review btn btn-default">Review</a></td>
     <td  class='table table-bordered table-striped'><button class="delete">&times;</button></td>
-  <!-- </div> -->
 </template>

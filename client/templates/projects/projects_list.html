@@ -1,0 +1,12 @@
+<template name="projectList">
+    <table class='table table-bordered table-striped'>
+    {{> projectTable}}
+    {{#each project}}
+    <tr class='table table-bordered table-striped' id='{{project_id}}'>
+      {{> projectItem}}
+    </tr>
+    {{/each}}
+    {{color}}
+
+  </table>
+</template>

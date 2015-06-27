@@ -1,10 +1,59 @@
 <template name="projectSubmission">
   <div class="container">
-    <form>
-      Project name: <input type="text" name="projectName">
-      Project ID: <input type="text" name="projectID">
-      Contract: <input type="file" name="contract">
-      <input type="submit" value="Submit Project">
+    <form id="myform">
+      <div class="row">
+        <div class="col-md-6 col-vert">
+          Project name: <input type="text" name="projectName">
+        </div>
+        <div class="col-md-6 col-vert">
+          Project ID: <input type="text" name="projectID">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-vert">
+          Project Description   <textarea cols="120" name="projectDescription"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">
+          Processing Initial Paperwork </div>
+          <div class="col-md-1 col-vert"><input type="button" name="initialPaperwork" class="notStarted" value="Not Started"></div>
+        <div class="col-md-3 col-md-offset-2 col-vert">
+          Architectural HOA Review </div>
+          <div class="col-md-1 col-vert"><input type="button" name="HOAReview" class="notStarted" value="Not Started"></div>
+        </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">Filing Notice of Commencement</div>
+        <div class="col-md-1 col-vert"> <input type="button" name="noticeCommencement" class="notStarted" value="Not Started"></div>
+        <div class="col-md-3 col-md-offset-2 col-vert">In Engineering</div>
+        <div class="col-md-1 col-vert"><input type="button" name="engineering" class="notStarted" value="Not Started"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">Requesting Permits</div>
+        <div class="col-md-1 col-vert"><input type="button" name="permitRequest" class="notStarted" value="Not Started"></div>
+        <div class="col-md-3 col-md-offset-2 col-vert">Construction Start Date Being Scheduled</div>
+        <div class="col-md-1 col-vert"><input type="button" name="constructionStart" class="notStarted" value="Not Started"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">Construction Ongoing</div>
+        <div class="col-md-1 col-vert"><input type="button" name="constructionOngoing" class="notStarted" value="Not Started"></div>
+        <div class="col-md-3 col-md-offset-2 col-vert">Waiting For Inspection</div>
+        <div class="col-md-1 col-vert"><input type="button" name="inspection" class="notStarted" value="Not Started"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">Construction Delayed</div>
+        <div class="col-md-1 col-vert"><input type="button" name="constructionDelay" class="notStarted" value="Not Started"></div>
+        <div class="col-md-3 col-md-offset-2 col-vert">Construction Completed</div>
+        <div class="col-md-1 col-vert"><input type="button" name="constructionCompleted" class="notStarted" value="Not Started"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-vert">Project Status</div>
+        <div class="col-md-1 col-vert"><input type="button" name="projectStatus" class="inProgress" value="Not Started"></div>
+      </div>
+      <div class="row col-vert" height="10px">
+      </div>
+        <input type="button" name="deleteProject" value="Delete">
+        <input type="submit" value="Submit Project">
     </form>
 
   </div>

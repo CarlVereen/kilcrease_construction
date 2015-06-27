@@ -1,0 +1,14 @@
+project_id
+project_name
+project_description
+processing_initial_paperwork
+architectural_HOA_review
+filing_notice_of_commencement
+in_Engineering
+requesting_permits
+construction_start_date_being_scheduled
+construction_ongoing
+waiting_for_inspection
+construction_delayed
+construction_completed
+project_status
