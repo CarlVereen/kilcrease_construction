@@ -11,41 +11,29 @@ Template.projectSubmission.events({
 // },
 
 
-  'submit form': function(){
-    event.preventDefault();
-    var projectNameVar = event.target.projectName.value;
-    var projectIDVar = event.target.projectID.value;
-    var projectDescriptionVar = event.target.projectDescription.value;
-    var initialPaperworkVar = event.target.initialPaperwork.value;
-    var HOAReviewVar = event.target.HOAReview.value;
-    var noticeCommencementVar = event.target.noticeCommencement.value;
-    var engineeringVar = event.target.engineering.value;
-    var permitRequestVar = event.target.permitRequest.value;
-    var constructionStartVar = event.target.constructionStart.value;
-    var constructionOngoingVar = event.target.constructionOngoing.value;
-    var inspectionVar = event.target.inspection.value;
-    var constructionDelayVar = event.target.constructionDelay.value;
-    var constructionCompletedVar = event.target.constructionCompleted.value;
-    var projectStatusVar = event.target.projectStatus.value;
+  'submit form': function(e){
+    e.preventDefault();
 
-    newProject = {
-      project_name: projectNameVar,
-      project_id: projectIDVar,
-      project_description: projectDescriptionVar,
-      processing_initial_paperwork: initialPaperworkVar,
-      architectural_HOA_review: HOAReviewVar,
-      filing_notice_of_commencement: noticeCommencementVar,
-      in_Engineering: engineeringVar,
-      requesting_permits: permitRequestVar,
-      construction_start_date_being_scheduled: constructionStartVar,
-      construction_ongoing: constructionOngoingVar,
-      waiting_for_inspection: inspectionVar,
-      construction_delayed: constructionDelayVar,
-      construction_completed: constructionCompletedVar,
-      project_status: projectStatusVar
+    var newProject = {
+      project_name:  $(e.target).find('[name=projectName]').val(),
+      project_id: $(e.target).find('[name=projectID]').val(),
+      project_description: $(e.target).find('[name=projectDescription]').val(),
+      processing_initial_paperwork: $(e.target).find('[name=initialPaperwork]').val(),
+      architectural_HOA_review:  $(e.target).find('[name=HOAReview]').val(),
+      filing_notice_of_commencement: $(e.target).find('[name=noticeCommencement]').val(),
+      in_Engineering: $(e.target).find('[name=engineering]').val(),
+      requesting_permits: $(e.target).find('[name=permitRequest]').val(),
+      construction_start_date_being_scheduled: $(e.target).find('[name=constructionStart]').val(),
+      construction_ongoing: $(e.target).find('[name=constructionOngoing]').val(),
+      waiting_for_inspection: $(e.target).find('[name=inspection]').val(),
+      construction_delayed: $(e.target).find('[name=constructionDelay]').val(),
+      construction_completed: $(e.target).find('[name=constructionCompleted]').val(),
+      project_status: $(e.target).find('[name=projectStatus]').val(),
     };
 
-    Router.go('projectList');
+    newProject._id = Projects.insert(newProject);
+
+    Router.go('projectPage', newProject);
 
 
   },
